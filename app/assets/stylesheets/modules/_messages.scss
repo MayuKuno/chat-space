@@ -67,7 +67,7 @@ $color-btn: #38aef0;
 }
 
 .main{
-  background-color: #ffffff;
+  // background-color: #ffffff;
   width: calc(100% - 300px);
   &__header{
     height: 99px;
@@ -81,17 +81,14 @@ $color-btn: #38aef0;
       margin-top: 35px;
       
     }
-      &__header__left__bottom{
+      &__header__left__top{
+        font-size: 20px;
+        color: #333;
         margin-bottom: 15px;
       }
 
-        h2.group_name{
-          font-size: 20px;
-          color: #333;
-          margin-bottom: 15px;
-        }
-
       &__header__left__bottom{
+        // メンバーと名前がずれているが良いのか
         display: flex;
         font-size: 12px;
         color: #999999;
@@ -116,26 +113,26 @@ $color-btn: #38aef0;
     padding: 46px 40px;
   }
 
-    &__content__talk{
+    &__content__talks__talk{
       padding-bottom: 40px;
     }
 
-      &__content__talk__info{
+      &__content__talks__talk__info{
         display: flex;
         margin-bottom: 10px;
       }
-        &__content__talk__info__talker{
+        &__content__talks__talk__info__talker{
           color: #434a54;
           font-size: 16px;
           font-weight: bold;
         }
         
-        &__content__talk__info__date{
+        &__content__talks__talk__info__date{
           color: #999999;
           font-size: 12px;
           margin-left: 10px;
         }
-      &__content__talk__content{
+      &__content__talks__talk__content{
         color: #434a54;
         font-size: 14px;
         margin-bottom: 10px;
@@ -164,8 +161,6 @@ $color-btn: #38aef0;
           padding: 0 40px 0 10px;
           color: #434a54;
           border-style: none;
-        
-
         }
        
         &__footer__input__left__img{
@@ -190,6 +185,5 @@ $color-btn: #38aef0;
         color: white;
         cursor: pointer;
       }
- 
 
   }
