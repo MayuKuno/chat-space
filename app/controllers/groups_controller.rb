@@ -1,7 +1,7 @@
 class GroupsController < ApplicationController
   def index
   end
-  
+
   def new
     @group = Group.new
     @group.users << current_user
@@ -22,7 +22,7 @@ class GroupsController < ApplicationController
 
   def update
     @group = Group.find(params[:id])
-    if group.update(group_params)
+    if @group.update(group_params)
       redirect_to root_path notice: 'グループ更新成しました'
     else
       render :edit
