@@ -1,4 +1,3 @@
-$color-btn: #38aef0;
 * {
   box-sizing: border-box;
 }
@@ -15,31 +14,31 @@ $color-btn: #38aef0;
     display: flex;
     align-items: center;
     padding: 0 20px;
-  }
-  // なぜ__boxではいけないのか、親要素の引き継ぐのはないのか
-    &__header__box{
+  
+    &__box{
       display: flex;
       justify-content: space-between;
       width: 100%;
       font-weight: bold;
-    }
-    // ないクラスががあっても良いものか？
-      &__header__box__name{
+    
+      &__name{
           font-size: 16px;
           color: white;
-        }
-
-      &__header__box__menu{
-          display: flex;
       }
-
-      &__header__box__menu__list{
+      &__menu{
+        display: flex;
+        &__list{
           padding-left: 5px;
+          i{
+            color: white;
+          }
         }
-        i{
-          color: white;
-        }
-        
+      }
+     
+    }
+  }
+
+
   &__below{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
@@ -47,27 +46,30 @@ $color-btn: #38aef0;
     padding-right:20px ;
     padding-left:20px ;
 
-  }
-    &__below__group{
+  
+    &__group{
       height: 91px;
       padding-bottom:40px;
-    }
-      &__below__group__names{
+   
+      &__names{
         margin-bottom: 5px; 
         font-weight: bold;
-      }
+      
         p.group_name{
           font-size: 15px;
         }
-
+      }
         p.group_message{
           font-size: 11px;
         }
       
+    }
+  }
 }
 
+
+
 .main{
-  // background-color: #ffffff;
   width: calc(100% - 300px);
   &__header{
     height: 99px;
@@ -76,25 +78,24 @@ $color-btn: #38aef0;
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-  }
-    &__header__left{
+  
+    &__left{
       margin-top: 35px;
       
-    }
-      &__header__left__top{
+    
+      &__top{
         font-size: 20px;
         color: #333;
         margin-bottom: 15px;
       }
 
-      &__header__left__bottom{
-        // メンバーと名前がずれているが良いのか
+      &__bottom{
         display: flex;
         font-size: 12px;
         color: #999999;
       }
-
-    &__header__right{
+    }
+    &__right{
       height: 40px;
       line-height: 40px;
       padding: 0 20px;
@@ -104,58 +105,60 @@ $color-btn: #38aef0;
       right: 40px;
       color: $color-btn;
       text-decoration: none;
-
     }
+  }
     
-  &__content{
+  &__contents{
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding: 46px 40px;
-  }
+  
 
-    &__content__talks__talk{
+    &__talks__talk{
       padding-bottom: 40px;
-    }
+    
 
-      &__content__talks__talk__info{
+      &__info{
         display: flex;
         margin-bottom: 10px;
-      }
-        &__content__talks__talk__info__talker{
+      
+        &__talker{
           color: #434a54;
           font-size: 16px;
           font-weight: bold;
         }
         
-        &__content__talks__talk__info__date{
+        &__date{
           color: #999999;
           font-size: 12px;
           margin-left: 10px;
         }
-      &__content__talks__talk__content{
+      }
+      &__content{
         color: #434a54;
         font-size: 14px;
         margin-bottom: 10px;
       }
-
+    }
+  }
 
   &__footer{
       height: 90px;
       padding: 20px 40px;
       background-color: #ddd;
-  }
-    &__footer__input{
+  
+    &__input{
       display: flex;
-    }
-      &__footer__input__left{
+    
+      &__left{
         position: relative;
         width: calc(100% - 115px);
         background-color: white;
         height: 50px;
         display: flex;
-      }
+      
 
-        &__footer__input__left__box{
+        &__box{
           height: 50px;
           width: 100%;
           padding: 0 40px 0 10px;
@@ -163,20 +166,23 @@ $color-btn: #38aef0;
           border-style: none;
         }
        
-        &__footer__input__left__img{
+        &__img{
           font-size: 1.3rem;
           position: absolute;
           top: 10px;
           right: 10px;
           cursor: pointer;
-        }
+        
 
-          &__footer__input__left__img__file{
+          &__file{
             display: none;
           }
+        }
+      }
+    
   
-
-      &__footer__input__btn{
+  
+      &__btn{
         width: 100px;
         height: 50px;
         padding: 0 30px;
@@ -185,5 +191,7 @@ $color-btn: #38aef0;
         color: white;
         cursor: pointer;
       }
-
+    }
   }
+
+}
