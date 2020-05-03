@@ -8,8 +8,7 @@ $color-btn: #38aef0;
 }
 .side{
   width: 300px;
-    color: white;
-    float: left;
+  color: white;
   &__header{
     background-color: #253141;
     height: 100px;
@@ -17,25 +16,24 @@ $color-btn: #38aef0;
     align-items: center;
     padding: 0 20px;
   }
+  // なぜ__boxではいけないのか、親要素の引き継ぐのはないのか
     &__header__box{
       display: flex;
       justify-content: space-between;
       width: 100%;
       font-weight: bold;
-      
     }
-
-        p{
+    // ないクラスががあっても良いものか？
+      &__header__box__name{
           font-size: 16px;
           color: white;
-          font-weight: bold;
         }
 
       &__header__box__menu{
           display: flex;
       }
 
-      li{
+      &__header__box__menu__list{
           padding-left: 5px;
         }
         i{
@@ -52,10 +50,11 @@ $color-btn: #38aef0;
   }
     &__below__group{
       height: 91px;
-      margin-bottom:40px;
+      padding-bottom:40px;
     }
       &__below__group__names{
         margin-bottom: 5px; 
+        font-weight: bold;
       }
         p.group_name{
           font-size: 15px;
