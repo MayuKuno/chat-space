@@ -20,24 +20,13 @@
         .main__contents__talks__talk__content
           content
 
-      .main__contents__talks__talk
-        .main__contents__talks__talk__info
-          .main__contents__talks__talk__info__talker
-            saeko
-          .main__contents__talks__talk__info__date
-            2020/05/02(Sat) 16:27:29
-        .main__contents__talks__talk__content
-          content
-
 
   .main__footer
-    .main__footer__input
-      .main__footer__input__left
-        .main__footer__input__left__box
-        %label{class: "main__footer__input__left__img"} 
-          = icon('fas', 'image')
-          %input{type: "file", class: "main__footer__input__left__img__file"}
-
-      .main__footer__input__btn
-
-
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'main__footer__input', placeholder: 'type a message'
+      .main__footer__left
+        = f.label :image, class: 'main__footer__left__box' do
+          = icon('fas', 'image', class: 'main__footer__left__box__img')
+          = f.file_field :image, class: 'main__footer__left__box__file'
+      = f.submit 'Send', class: 'main__footer__btn'
+      

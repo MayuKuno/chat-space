@@ -146,54 +146,65 @@
 
   &__footer{
       height: 90px;
-      padding: 20px 40px;
       background-color: #ddd;
-  
-    &__input{
-      display: flex;
-    
-      &__left{
-        position: relative;
-        width: calc(100% - 115px);
-        background-color: white;
+      width: calc(100vw - 300px);
+      position: relative;
+   
+      &__input{
+        padding-left: 10px;
         height: 50px;
-        display: flex;
-      
-
-        &__box{
-          height: 50px;
-          width: 100%;
-          padding: 0 40px 0 10px;
-          color: #434a54;
-          border-style: none;
-        }
-       
-        &__img{
-          font-size: 1.3rem;
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          cursor: pointer;
+        margin: 20px 40px;
+        width: calc(100vw - 300px - 195px);
         
-
-          &__file{
-            display: none;
-          }
-        }
       }
-    
-  
-  
+      &__left{
+        
+          &__box{
+            
+            &__img{
+              font-size: 21px;
+              position: absolute;
+              right: 170px;
+              top: 35px;
+            }
+            &__file{
+              display: none;
+            }
+          }
+      }
+        
       &__btn{
         width: 100px;
+        color: white;
+        font-weight: bold;
         height: 50px;
-        padding: 0 30px;
         margin-left: 15px;
         background-color: $color-btn;
-        color: white;
         cursor: pointer;
+        position: absolute;
+        right: 40px;
+        top: 20px;
       }
-    }
-  }
 
+      
+      // &__left{
+      //   &__box{
+          
+      //     &__img{
+      //       font-size: 1.3rem;
+     
+      //     }
+      //     &__file{
+      //       display: none;
+      //     }
+      //   }
+      // }
+      // &__btn{
+      //   padding: 0 30px;
+   
+      // }
+
+
+  } 
 }
+
