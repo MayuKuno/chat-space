@@ -4,7 +4,7 @@
 
 .wrapper{
   display: flex;
-  height: 100vh;
+  // height: 100vh;
 }
 .side{
   width: 300px;
@@ -46,6 +46,7 @@
     padding-top: 20px;
     padding-right:20px ;
     padding-left:20px ;
+    overflow: scroll;
 
     &__group{
       height: 91px;
@@ -114,6 +115,7 @@
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding: 46px 40px;
+    overflow: scroll;
       &__talks__talk{
         padding-bottom: 40px;
         &__info{
@@ -141,6 +143,8 @@
   }
 
   &__footer{
+      position: fixed;
+      bottom: 0;
       height: 90px;
       background-color: #ddd;
       width: calc(100vw - 300px);
