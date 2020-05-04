@@ -10,15 +10,8 @@
     = link_to 'Edit', "#", class: "main__header__right" 
 
   .main__contents
-    .main__contents__talks
-      .main__contents__talks__talk
-        .main__contents__talks__talk__info
-          .main__contents__talks__talk__info__talker
-            saeko
-          .main__contents__talks__talk__info__date
-            2020/05/02(Sat) 16:27:29
-        .main__contents__talks__talk__content
-          content
+    = render @messages
+    
 
 
   .main__footer

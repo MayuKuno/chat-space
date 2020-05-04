@@ -13,10 +13,13 @@
   .side__below
     - current_user.groups.each do |group|
       .side__below__group
-        = link_to '#', class: "side__below__group__link" do
+        = link_to group_messages_path(group), class: "side__below__group__link" do
           .side__below__group__names
             = group.name
           .side__below__group__messages
             メッセージはまだありません。
+
+
+
       
   
