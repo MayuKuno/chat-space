@@ -63,7 +63,7 @@ $(function(){
       var html = buildHTML(data);
       $('.main__contents').append(html);
       $('form')[0].reset();
-      $('.main__footer__btn').attr('disabled', false);　 
+      $('.main__footer__btn').attr('disabled', false);
       $('.main__contents').animate({ scrollTop: $('.main__contents')[0].scrollHeight});
     })
     .fail(function() {
