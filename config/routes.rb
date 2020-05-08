@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :users, only: [:edit, :update] do
     resources :searches, only: :index
   end
+  resources :users, only: [:edit, :update]
   resources :groups, only: [:new, :create, :edit, :update, :index] do
     resources :messages, only: [:index, :create]
     namespace :api do
