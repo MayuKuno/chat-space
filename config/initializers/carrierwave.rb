@@ -14,6 +14,6 @@ CarrierWave.configure do |config|
     region: 'ap-northeast-1'
   }
 
-  config.fog_directory  = chatspace2020.ninefs
-  config.asset_host = https://s3-ap-northeast-1.amazonaws.com/chatspace2020.ninefs
+  config.fog_directory  = 'chatspace2020.ninefs'
+  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/chatspace2020.ninefs'
 end
