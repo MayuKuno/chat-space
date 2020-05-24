@@ -96,7 +96,12 @@
         display: flex;
         font-size: 12px;
         color: #999999;
+        
+        &__list{
+          margin-left: 5px;
+        }
       }
+        
     }
     &__right{
       height: 40px;
